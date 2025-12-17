@@ -11,3 +11,15 @@ body {
     background: #f4f6f9;
     color: #1f2933;
 }
+/* ================= LOGO CLICÁVEL ================= */
+
+.logo-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link:hover {
+    opacity: 0.9;
+}

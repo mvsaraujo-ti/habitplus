@@ -49,51 +49,75 @@
     color: #fff;
 }
 
-/* ================= TABELA AUDITORIA (REFINO) ================= */
+/* ================= TABELA AUDITORIA (DESIGN FINAL) ================= */
 
 .table-box {
     background: #ffffff;
-    border-radius: 12px;
-    padding: 8px 0;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    border-radius: 14px;
+    padding: 4px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
+/* Estrutura da tabela */
 table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
 }
 
+/* Cabeçalho */
 thead th {
     background: #0f172a;
     color: #e5e7eb;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     padding: 14px 18px;
+    text-align: left;
 }
 
+/* Corpo */
 tbody td {
     padding: 14px 18px;
     font-size: 14px;
     color: #1f2933;
     border-bottom: 1px solid #e5e7eb;
     vertical-align: middle;
+    white-space: nowrap;
 }
 
+/* Última linha sem borda */
 tbody tr:last-child td {
     border-bottom: none;
 }
 
+/* Hover sutil */
 tbody tr:hover {
     background: #f8fafc;
 }
 
-/* ================= BADGES (REFINO) ================= */
+/* Alinhamentos semânticos */
+td.col-data {
+    color: #475569;
+    font-size: 13px;
+}
+
+td.col-unidades {
+    text-align: right;
+    font-weight: 700;
+}
+
+
+/* ================= BADGES (ALINHADOS) ================= */
+
 .badge {
-    display: inline-block;
-    padding: 4px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 56px;
+    height: 22px;
+    padding: 0 10px;
     border-radius: 999px;
     font-size: 11px;
     font-weight: 700;
@@ -111,11 +135,5 @@ tbody tr:hover {
 
 .badge.EXCLUIU {
     background: #dc2626;
+}
 
-tbody tr {
-    transition: background 0.15s ease;
-}
-}
-.badge.ADMIN {
-    background: #334155;
-}

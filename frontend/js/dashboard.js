@@ -61,3 +61,13 @@ new Chart(document.getElementById("chartMunicipio"), {
         responsive: true
     }
 });
+// ================= CONTROLE DE VISUAL POR PERFIL =================
+
+const user = JSON.parse(localStorage.getItem("habita_user"));
+
+// Se não for admin, esconder cards administrativos
+if (!user || user.role !== "admin") {
+    document.querySelectorAll(".admin-only").forEach(card => {
+        card.style.display = "none";
+    });
+}

@@ -11,18 +11,18 @@ if (!user || user.role !== "admin") {
 
 logs.forEach(log => {
     tabela.innerHTML += `
-        <td style="white-space:nowrap;">${log.data}</td>
-<td>${log.usuario}</td>
-<td>
-    <span class="badge ${log.acao}">
-        ${log.acao}
-    </span>
-</td>
-<td>${log.municipio}</td>
-<td>${log.programa}</td>
-<td style="text-align:right; font-weight:600;">
-    ${log.unidades}
-</td>
-
-    `;
+        <tr>
+    <td class="col-data">${log.data}</td>
+    <td>${log.usuario}</td>
+    <td>
+        <span class="badge ${log.acao}">
+            ${log.acao}
+        </span>
+    </td>
+    <td>${log.municipio}</td>
+    <td>${log.programa}</td>
+    <td class="col-unidades">${log.unidades}</td>
+</tr>
+   
+`;
 });

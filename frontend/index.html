@@ -20,9 +20,11 @@
 <!-- ================= TOPO ================= -->
 <header class="topbar">
     <div class="logo">
+    <a href="index.html" class="logo-link">
         <strong>HABITA+</strong>
         <span>Painel de Programas Habitacionais</span>
-    </div>
+    </a>
+</div>
 
     <div class="user-info">
         <span>Usuário</span>
@@ -50,6 +52,51 @@
             <p id="totalProgramas">0</p>
         </div>
     </section>
+<!-- ================= ACESSO AO PAINEL ================= -->
+<section class="panel-access">
+
+    <h2>Acesso ao Painel</h2>
+    <p class="subtitle">
+        Navegação rápida para áreas administrativas e de consulta
+    </p>
+
+    <div class="panel-cards">
+
+        <a href="admin.html" class="panel-card">
+            <h3>Administração</h3>
+            <p>Cadastro e correção de dados</p>
+        </a>
+
+        <a href="municipios.html" class="panel-card">
+            <h3>Municípios</h3>
+            <p>Consulta por município e programa</p>
+        </a>
+
+        <a href="auditoria.html" class="panel-card">
+            <h3>Auditoria</h3>
+            <p>Histórico de alterações</p>
+        </a>
+<div class="panel-cards">
+
+    <a href="admin.html" class="panel-card admin-only" id="cardAdmin">
+        <h3>Administração</h3>
+        <p>Cadastro e correção de dados</p>
+    </a>
+
+    <a href="municipios.html" class="panel-card">
+        <h3>Municípios</h3>
+        <p>Consulta por município e programa</p>
+    </a>
+
+    <a href="auditoria.html" class="panel-card admin-only" id="cardAuditoria">
+        <h3>Auditoria</h3>
+        <p>Histórico de alterações</p>
+    </a>
+
+</div>
+
+    </div>
+</section>
 
 <!-- ===== GRÁFICOS ===== -->
 <section class="charts">

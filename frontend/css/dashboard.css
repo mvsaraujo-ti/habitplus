@@ -96,3 +96,54 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background: #e5e7eb;
 }
+/* ================= ACESSO AO PAINEL ================= */
+
+.panel-access {
+    margin-top: 40px;
+}
+
+.panel-access h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.panel-cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.panel-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: #1f2933;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.panel-card h3 {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.panel-card p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.panel-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+/* ================= DESTAQUE POR PERFIL ================= */
+
+.admin-only {
+    border-left: 4px solid #0f172a;
+}
+
+.admin-only h3 {
+    font-weight: 700;
+}
