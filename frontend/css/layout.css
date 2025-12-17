@@ -1,0 +1,92 @@
+/* ================= LAYOUT INSTITUCIONAL ================= */
+
+.topbar {
+    background: #0f172a;
+    color: #fff;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    display: block;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.user-info button {
+    margin-left: 16px;
+    padding: 6px 12px;
+    border: none;
+    background: #334155;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 24px;
+}
+/* ================= LOGIN ================= */
+
+.login-page {
+    background: #0f172a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 32px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 4px;
+}
+
+.login-box p {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 24px;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 4px;
+    margin-top: 12px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cbd5f5;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #0f172a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-footer {
+    display: block;
+    margin-top: 16px;
+    font-size: 12px;
+    color: #94a3b8;
+}

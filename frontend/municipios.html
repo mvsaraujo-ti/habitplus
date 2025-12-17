@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>HABITA+ | Municípios</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- ================= TOPO ================= -->
+<header class="topbar">
+    <div class="logo">
+        <strong>HABITA+</strong>
+        <span>Painel de Programas Habitacionais</span>
+    </div>
+
+    <div class="user-info">
+        <a href="index.html">Dashboard</a>
+        <button onclick="logout()">Sair</button>
+    </div>
+</header>
+
+<!-- ================= CONTEÚDO ================= -->
+<main class="container">
+
+    <h2>Produção por Município e Programa</h2>
+    <p class="subtitle">
+        Visualização consolidada da produção habitacional
+    </p>
+
+    <!-- ===== FILTROS ===== -->
+    <section class="filters">
+        <select id="filtroPrograma" onchange="filtrar()">
+            <option value="">Todos os Programas</option>
+        </select>
+
+        <select id="filtroMunicipio" onchange="filtrar()">
+            <option value="">Todos os Municípios</option>
+        </select>
+    </section>
+
+    <!-- ===== TABELA ===== -->
+    <section class="table-box">
+        <table>
+            <thead>
+                <tr>
+                    <th>Município</th>
+                    <th>Programa</th>
+                    <th>Unidades</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaDados">
+                <!-- JS injeta -->
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<script src="js/auth.js"></script>
+<script src="js/data.js"></script>
+<script src="js/municipios.js"></script>
+
+</body>
+</html>

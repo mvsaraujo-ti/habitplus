@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>HABITA+ | Acesso</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body class="login-page">
+
+<div class="login-box">
+
+    <h1>HABITA+</h1>
+    <p>Painel de Programas Habitacionais</p>
+
+    <form onsubmit="login(event)">
+        <label>Usuário</label>
+        <input type="text" id="user" required>
+
+        <label>Senha</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Entrar</button>
+    </form>
+
+    <span class="login-footer">
+        Acesso restrito
+    </span>
+
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

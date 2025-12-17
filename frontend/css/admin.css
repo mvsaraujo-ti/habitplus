@@ -1,0 +1,121 @@
+/* ================= ADMIN ================= */
+
+.form-box {
+    background: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.form-box label {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+.form-box button {
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: #0f172a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.table-box button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background: #2563eb;
+    color: #fff;
+}
+
+.btn-delete {
+    background: #dc2626;
+    color: #fff;
+}
+
+/* ================= TABELA AUDITORIA (REFINO) ================= */
+
+.table-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 8px 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+thead th {
+    background: #0f172a;
+    color: #e5e7eb;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 14px 18px;
+}
+
+tbody td {
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #1f2933;
+    border-bottom: 1px solid #e5e7eb;
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* ================= BADGES (REFINO) ================= */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.badge.CRIOU {
+    background: #16a34a;
+}
+
+.badge.EDITOU {
+    background: #2563eb;
+}
+
+.badge.EXCLUIU {
+    background: #dc2626;
+
+tbody tr {
+    transition: background 0.15s ease;
+}
+}
+.badge.ADMIN {
+    background: #334155;
+}

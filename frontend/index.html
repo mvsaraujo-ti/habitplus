@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>HABITA+ | Painel Habitacional</title>
+
+    <!-- Responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte institucional -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- ================= TOPO ================= -->
+<header class="topbar">
+    <div class="logo">
+        <strong>HABITA+</strong>
+        <span>Painel de Programas Habitacionais</span>
+    </div>
+
+    <div class="user-info">
+        <span>Usuário</span>
+        <button onclick="logout()">Sair</button>
+    </div>
+</header>
+
+<!-- ================= CONTEÚDO ================= -->
+<main class="container">
+
+    <!-- ===== INDICADORES ===== -->
+    <section class="cards">
+        <div class="card">
+            <h3>Total de Unidades</h3>
+            <p id="totalUnidades">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Municípios Atendidos</h3>
+            <p id="totalMunicipios">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Programas</h3>
+            <p id="totalProgramas">0</p>
+        </div>
+    </section>
+
+<!-- ===== GRÁFICOS ===== -->
+<section class="charts">
+    <div class="chart-box">
+        <h3>Produção por Programa</h3>
+        <canvas id="chartPrograma"></canvas>
+    </div>
+
+    <div class="chart-box">
+        <h3>Produção por Município</h3>
+        <canvas id="chartMunicipio"></canvas>
+    </div>
+</section>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- JS -->
+<script src="js/auth.js"></script>
+<script src="js/data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

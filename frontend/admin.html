@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>HABITA+ | Administração</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<!-- ================= TOPO ================= -->
+<header class="topbar">
+    <div class="logo">
+        <strong>HABITA+</strong>
+        <span>Área Administrativa</span>
+        
+
+    </div>
+
+    <div class="user-info">
+    <a href="index.html">Dashboard</a>
+    <a href="municipios.html">Municípios</a>
+    <a href="auditoria.html">Auditoria</a>
+    <span class="badge ADMIN">ADMIN</span>
+    <button onclick="logout()">Sair</button>
+    
+</div>
+
+</header>
+
+<!-- ================= CONTEÚDO ================= -->
+<main class="container">
+
+    <h2>Cadastro de Produção Habitacional</h2>
+    <p class="subtitle">Inclusão e correção de dados</p>
+
+    <!-- ===== FORMULÁRIO ===== -->
+    <section class="form-box">
+        <form onsubmit="salvar(event)">
+            <input type="hidden" id="editIndex">
+
+            <label>Município</label>
+            <input type="text" id="municipio" required>
+
+            <label>Programa</label>
+            <input type="text" id="programa" required>
+
+            <label>Unidades</label>
+            <input type="number" id="unidades" required>
+
+            <button type="submit">Salvar</button>
+        </form>
+    </section>
+
+    <!-- ===== TABELA ADMIN ===== -->
+    <section class="table-box">
+        <table>
+            <thead>
+                <tr>
+                    <th>Município</th>
+                    <th>Programa</th>
+                    <th>Unidades</th>
+                    <th>Alterado por</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaAdmin">
+                <!-- JS -->
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<script src="js/auth.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
